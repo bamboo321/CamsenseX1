@@ -131,6 +131,9 @@ if __name__ == "__main__":
 
             # 排他制御開始
             capture.lock.acquire()
+
+            # TODO: 点の濃淡で強度を表現する
+
             # 距離データをプロット(散布図として描画)
             dist.scatter(list(capture.theta), list(capture.distance), c = "blue", s = 5)
             # 強度データをプロット(線でつなげて描画)
