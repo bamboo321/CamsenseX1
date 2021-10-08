@@ -138,6 +138,8 @@ if __name__ == "__main__":
             dist.scatter(list(capture.theta), list(capture.distance), c = "blue", s = 5)
             # 強度データをプロット(線でつなげて描画)
             dist.plot(list(capture.theta), list(capture.intensity), c = "orange", linewidth = 1)
+            #回転数をプロット
+            dist.text(0.9, -0.02, "rpm = {}".format(capture.rpm), ha="left", transform=dist.transAxes)
             # データの描画をしたのでデータ取得フラグを下ろす
             capture.dataObtained = False
             # 排他制御開始
