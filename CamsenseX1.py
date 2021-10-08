@@ -135,7 +135,7 @@ if __name__ == "__main__":
             # TODO: 点の濃淡で強度を表現する
 
             # 距離データをプロット(散布図として描画)
-            dist.scatter(list(capture.theta), list(capture.distance), c = "blue", s = 5)
+            dist.scatter(list(capture.theta), list(capture.distance), c = "blue", s = 1)
             # 強度データをプロット(線でつなげて描画)
             dist.plot(list(capture.theta), list(capture.intensity), c = "orange", linewidth = 1)
             #回転数をプロット
