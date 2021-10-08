@@ -117,8 +117,8 @@ if __name__ == "__main__":
 
     # 極座標のグラフを生成
     dist = plt.subplot(111, polar = True)
-    # 表示する最大距離の初期値を2000に設定
-    rmax = 2000
+    # 表示する最大距離の初期値を8000に設定
+    rmax = 8000
 
     capture = Capture(sys.argv[1], dataSize = 480, isInvert = True)
     capture.run()
